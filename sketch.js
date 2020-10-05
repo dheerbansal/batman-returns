@@ -18,13 +18,13 @@ function preload(){
     }
 
 function setup(){
-    createCanvas(1200,800)
+    createCanvas(900,800)
 
-    person = createSprite(500,600,50,50);
+    person = createSprite(500,630,50,50);
     person.addImage(personIMG);
     person.scale = 0.5
   
-    ground = createSprite(500,770,1200,25);
+    ground = createSprite(500,805,1200,25);
     ground.shapeColor = "purple";
     ground.scale = 0.9;
 
@@ -77,7 +77,7 @@ function spawnThunder(){
 
 
 function spawnDrop(){
-    if(frameCount % 10 === 0){
+    if(frameCount % 0.5 === 0){
         
         drop = createSprite(15,25,5,5);
         drop.shapeColor = "white"
